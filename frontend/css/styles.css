@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #7db87d;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+}
+
+
+h1 {
+    color: white;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    color: white;
+    align-self: flex-start;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+ul {
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 16px;
+    margin-bottom: 24px;
+    backdrop-filter: blur(4px);
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 8px 0;
+    color: white;
+    font-weight: 500;
+}
+
+
+li button {
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: white;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 6px;
+    transition: background-color 0.2s;
+}
+
+li button:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 10px;
+    width: 70%;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+
+#create-btn {
+    background-color: white;
+    color: #7db87d;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+}
+
+#create-btn:hover {
+    opacity: 0.85;
+}
+
+
+@media(max-width:768px){
+    input { width: 100%; }
+    #create-btn { width: 100%; margin-left: 0; margin-top: 10px; }
+}
+
+@media(max-width:480px){
+    h1 { font-size: 24px; }
+    input { width: 100%; }
+    #create-btn { width: 100%; margin-top: 10px; }
+}
+#create-btn {
+    margin-top: 10px;
+    align-self: center;
+}
